@@ -19,15 +19,14 @@
 
         @if (session('success'))
         <div class="success" style="white-space: pre-line;">
-            {{ session('success') }}
+            SUCCESS : {{ session('success') }}
         </div>
         @endif
         @if (session('error'))
         <div class="error">
-            {{ session('error') }}
+            ERROR : {{ session('error') }}
         </div>
         @endif
-
 
 
         <div id="content">
