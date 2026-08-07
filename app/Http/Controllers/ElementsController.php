@@ -52,4 +52,10 @@ class ElementsController extends Controller
 
         return view("addElem", ["data" => $data]);
     }
+
+    public function list()
+    {
+        $data = Elements::orderBy("z", "asc")->get();
+        return view("listelements", ["data" => $data]);
+    }
 }
