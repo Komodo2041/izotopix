@@ -34,9 +34,18 @@
         </div>
 
         <div class="form-group">
+            <label>Czy jest stabilny?</label>
+            <select class="form-control" name="istab">
+                <option value="1">Stabilny</option>
+                <option value="0">Brak stabilnych izotopów</option>
+            </select>
+        </div>
+
+        <div class="form-group">
             <label>Kolumna</label>
             <input type="text" name="columns" class="form-control" placeholder="Column" value="{{$data['columns']}}">
         </div>
+
 
         <div class="form-group">
             <label>Rows</label>

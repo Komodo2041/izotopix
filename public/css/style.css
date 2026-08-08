@@ -21,3 +21,7 @@ span.small {
     background: white;
     border: none;
 }
+
+.elemTable td.orange {
+    background: orange;
+}

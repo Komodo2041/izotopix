@@ -10,7 +10,8 @@
         @for ($i = 1; $i <= 7; $i++)
             <tr>
             @for ($j = 1; $j <= 18; $j++)
-                <td @if (!isset($res[$i][$j])) class="noelem" @endif>
+                <td @if (!isset($res[$i][$j])) class="noelem" @endif @if (isset($res[$i][$j]) && $res[$i][$j]['isstab']==0) class="orange" @endif>
+
                 @if (isset($res[$i][$j]))
                 {{$res[$i][$j]['z']}}<br />
                 {{$res[$i][$j]['short']}}<br />
@@ -27,7 +28,7 @@
 
         <tr>
             @for ($j = 1; $j <= 14; $j++)
-                <td>
+                <td @if (isset($res[8][$j]) && $res[8][$j]['isstab']==0) class="orange" @endif>
                 @if (isset($res[$i][$j]))
                 {{$res[8][$j]['z']}}<br />
                 {{$res[8][$j]['short']}}<br />
@@ -44,7 +45,7 @@
 
         <tr>
             @for ($j = 1; $j <= 14; $j++)
-                <td>
+                <td @if (isset($res[9][$j]) && $res[9][$j]['isstab']==0) class="orange" @endif>
                 @if (isset($res[$i][$j]))
                 {{$res[9][$j]['z']}}<br />
                 {{$res[9][$j]['short']}}<br />

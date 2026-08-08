@@ -17,6 +17,7 @@ class ElementsController extends Controller
         $data['rows'] = $request->input('rows', 1);
         $data['name'] = $request->input('name', "");
         $data['short'] = $request->input('short', "");
+        $data['istab'] = $request->input('istab', 1);
         $save =  $request->input('save');
         if ($save) {
 
