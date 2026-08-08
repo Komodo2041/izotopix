@@ -53,9 +53,15 @@ class ElementsController extends Controller
         return view("addElem", ["data" => $data]);
     }
 
-    public function list()
+    public function list(Request $request)
     {
-        $data = Elements::orderBy("z", "asc")->get();
-        return view("listelements", ["data" => $data]);
+
+        $query = $request->input("q", "");
+        $data = Elements::orderBy("z", "asc");
+        if ($query != "") {
+            $data = $data->where("short", "LIKE", "%" . $query . "%");
+        }
+        $data = $data->get();
+        return view("listelements", ["data" => $data, "q" => $query]);
     }
 }

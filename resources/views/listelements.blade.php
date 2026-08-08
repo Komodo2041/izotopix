@@ -3,6 +3,11 @@
 
 <a href="/" class=" btn btn-primary"> Strona główna</button></a>
 
+<form action="" method="get">
+    <div class="form-group">
+        Wyszukaj: <input type="text" name="q" value="{{$q}}" class="form-control" />
+    </div>
+</form>
 
 
 <div class="container">
