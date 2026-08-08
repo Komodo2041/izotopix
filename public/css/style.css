@@ -1,0 +1,23 @@
+body {
+    background: #fdfdfd;
+}
+
+span.small {
+    font-size: 10px;
+}
+
+.elemTable {
+    margin: 30px 0px;
+}
+
+.elemTable td {
+    width: 60px;
+    border: 1px solid #1c1c1c;
+    background: silver;
+    text-align: center;
+}
+
+.elemTable td.noelem {
+    background: white;
+    border: none;
+}
