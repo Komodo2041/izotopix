@@ -5,6 +5,7 @@
 
 <a href="/elements" class="btn btn-info">Pierwiastki</a>
 <a href="/fill/Elements" class="btn btn-info">Uzupełnij Pierwiastki</a>
+<a href="/showTableFile" class="btn btn-info">Pokaż dane CSV</a>
 <div class="container">
     <table class="elemTable">
         @for ($i = 1; $i <= 7; $i++)
