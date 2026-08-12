@@ -37,6 +37,37 @@
         </tr>
         @endforeach
     </table>
+
+    <table class="table">
+        <tr>
+            <th>N</th>
+            <th>decay_1</th>
+            <th>decay_1_%</th>
+            <th>unc_1</th>
+            <th>decay_2</th>
+            <th>decay_2_%</th>
+            <th>unc_2</th>
+            <th>decay_3</th>
+            <th>decay_3_%</th>
+            <th>unc_3</th>
+
+        </tr>
+        @foreach ($res AS $r)
+        <tr>
+            <td>{{$r[1]}}</td>
+            <td>{{$r[18]}}</td>
+            <td>{{$r[19]}}</td>
+            <td>{{$r[20]}}</td>
+            <td>{{$r[21]}}</td>
+            <td>{{$r[22]}}</td>
+            <td>{{$r[23]}}</td>
+            <td>{{$r[24]}}</td>
+            <td>{{$r[25]}}</td>
+            <td>{{$r[26]}}</td>
+        </tr>
+        @endforeach
+    </table>
+
     @else
     <h4>Kolumny</h4>
     @foreach ($columns AS $id => $c)
