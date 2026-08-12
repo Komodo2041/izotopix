@@ -19,8 +19,9 @@
     <table class="table">
         <tr>
             <th>N</th>
+            <th>abundance</th>
+            <th>unc_a</th>
             <th>HT</th>
-
             <th>operator_hl</th>
             <th>unc_hl</th>
             <th>unit_hl</th>
@@ -29,6 +30,8 @@
         @foreach ($res AS $r)
         <tr>
             <td>{{$r[1]}}</td>
+            <td>{{$r[5]}}</td>
+            <td>{{$r[6]}}</td>
             <td>{{$r[12]}}</td>
             <td>{{$r[13]}}</td>
             <td>{{$r[14]}}</td>
@@ -73,6 +76,9 @@
     @foreach ($columns AS $id => $c)
     {{$id}} - {{$c}}<br />
     @endforeach
+
+    @include('describeColumns', [])
+
     @endif
 
 </div>
