@@ -10,8 +10,13 @@ class CsvController extends Controller
 {
     public function showTableFile(Request $request, IzoData $id)
     {
-        $z = $request->input("z", 1);
+        $z = $request->input("z", 0);
         $columns = $id->getColumns();
-        return view("izoShow", ["columns" => $columns, "z" => $z]);
+        $res = [];
+        if ($z > 0) {
+            $res = $id->getIzoData($z);
+        }
+
+        return view("izoShow", ["columns" => $columns, "z" => $z, "res" => $res]);
     }
 }
