@@ -3,6 +3,8 @@
 
 <a href="/" class=" btn btn-primary"> Strona główna</button></a>
 
+<a href="/importToTableIzoyopic" class=" btn btn-primary">Importuj podstawowe dane do bazy</button></a>
+
 <form action="" method="get">
     <div class="form-group">
         Pokaż Z: <input type="number" max="118" name="z" value="{{$z}}" class="form-control" />

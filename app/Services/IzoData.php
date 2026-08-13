@@ -17,7 +17,7 @@ class IzoData
         return $columns;
     }
 
-    public function getIzoData($z)
+    public function getIzoData($z, $all = 0)
     {
         $data = Storage::get('izobase.csv');
         $records = explode("\n", $data);
@@ -25,7 +25,9 @@ class IzoData
         $res = [];
         for ($i = 4; $i < $c; $i++) {
             $pom = explode(",", $records[$i]);
-            if ($pom[0] == $z) {
+            if ($pom[0] == $z && $all == 0) {
+                $res[] = $pom;
+            } elseif ($all == 1 && $pom[0] > 0) {
                 $res[] = $pom;
             }
         }
