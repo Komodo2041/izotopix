@@ -19,13 +19,13 @@ class Izotopics extends Model
         "unit_hl",
         "half_life_sec",
         "decay_1",
-        "decay_1_%",
+        "decay_1_p",
         "unc_1",
         "decay_2",
-        "decay_2_%",
+        "decay_2_p",
         "unc_2",
         "decay_3",
-        "decay_3_%",
+        "decay_3_p",
         "unc_3"
     ];
 

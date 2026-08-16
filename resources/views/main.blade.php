@@ -14,9 +14,11 @@
                 <td @if (!isset($res[$i][$j])) class="noelem" @endif @if (isset($res[$i][$j]) && $res[$i][$j]['isstab']==0) class="orange" @endif>
 
                 @if (isset($res[$i][$j]))
-                {{$res[$i][$j]['z']}}<br />
-                {{$res[$i][$j]['short']}}<br />
-                <span class="small">{{$res[$i][$j]['name']}}</span>
+                <a class="elempier" href="/elementsDetails/{{$res[$i][$j]['z']}}">
+                    {{$res[$i][$j]['z']}}<br />
+                    {{$res[$i][$j]['short']}}<br />
+                    <span class="small">{{$res[$i][$j]['name']}}</span>
+                </a>
                 @endif
                 </td>
                 @endfor

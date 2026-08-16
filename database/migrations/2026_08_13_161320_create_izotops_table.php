@@ -27,13 +27,13 @@ return new class extends Migration
             $table->double("half_life_sec")->nullable();
 
             $table->string("decay_1", 10)->nullable();
-            $table->double("decay_1_%")->nullable();
+            $table->double("decay_1_p")->nullable();
             $table->double("unc_1")->nullable();
             $table->string("decay_2", 10)->nullable();
-            $table->double("decay_2_%")->nullable();
+            $table->double("decay_2_p")->nullable();
             $table->double("unc_2")->nullable();
             $table->string("decay_3", 10)->nullable();
-            $table->double("decay_3_%")->nullable();
+            $table->double("decay_3_p")->nullable();
             $table->double("unc_3")->nullable();
             $table->timestamps();
 

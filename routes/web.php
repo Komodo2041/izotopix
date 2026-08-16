@@ -8,3 +8,4 @@ Route::match(["get", "post"], "/fill/Elements", "App\Http\Controllers\ElementsCo
 Route::get('/elements', "App\Http\Controllers\ElementsController@list");
 Route::get('/showTableFile', "App\Http\Controllers\CsvController@showTableFile");
 Route::get('/importToTableIzoyopic', "App\Http\Controllers\CsvController@importToTableIzoyopic");
+Route::get('/elementsDetails/{id}', "App\Http\Controllers\ElementsController@elementsDetails");

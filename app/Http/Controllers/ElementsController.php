@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\Elements;
+use App\Models\Izotopics;
+
 
 class ElementsController extends Controller
 {
@@ -64,5 +66,16 @@ class ElementsController extends Controller
         }
         $data = $data->get();
         return view("listelements", ["data" => $data, "q" => $query]);
+    }
+
+    public function elementsDetails($id)
+    {
+
+        $element = Elements::where("z", $id)->first();
+        if (!$element) {
+            return redirect("/")->with('success', 'Nie znaleziono pierwiastka');
+        }
+        $izotopics = Izotopics::where("z", $id)->get();
+        return view("elemShow", ["id" => $id, "element" => $element, "izotopics" => $izotopics]);
     }
 }

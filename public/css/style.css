@@ -25,3 +25,14 @@ span.small {
 .elemTable td.orange {
     background: orange;
 }
+
+a.elempier {
+    color: #1c1c1c;
+    width: 100%;
+    height: 100%;
+}
+
+a.elempier:hover {
+    color: #777777;
+    text-decoration: none;
+}
