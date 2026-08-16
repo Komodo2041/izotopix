@@ -2,6 +2,9 @@
 @section('content')
 
 <a href="/" class=" btn btn-primary"> Strona główna</button></a>
+<a href="/fill/Elements" class="btn btn-info">Uzupełnij Pierwiastki</a>
+<a href="/showTableFile" class="btn btn-info">Pokaż dane CSV</a>
+<a href="/showallizotopics" class="btn btn-info">Izotopy różnice</a>
 
 <form action="" method="get">
     <div class="form-group">
