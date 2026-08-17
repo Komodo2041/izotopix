@@ -83,7 +83,10 @@ class ElementsController extends Controller
     {
         $elements = Elements::select("z", "name")->get()->pluck("name", "z")->toArray();
 
-        $results = Izotopics::selectRaw("count(z) AS count, z, MAX(n) AS max, MIN(n) AS min ")->where("is_stable", 1)->groupBy("z")->orderBy("count", "DESC")->get()->toArray();
-        return view("listizo", ["res" => $results, "elements" => $elements]);
+        $results = Izotopics::selectRaw("count(z) AS count, z, MAX(n) AS max, MIN(n) AS min ")->whereNotNull("abundance")->groupBy("z")->orderBy("count", "DESC")->get()->toArray();
+        $stable = Izotopics::selectRaw("count(z) AS count, z")->where("is_stable", 1)->groupBy("z")->get()->pluck("count", "z")->toArray();
+
+
+        return view("listizo", ["res" => $results, "elements" => $elements, "stable" => $stable]);
     }
 }

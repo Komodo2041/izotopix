@@ -33,9 +33,11 @@
             @for ($j = 1; $j <= 14; $j++)
                 <td @if (isset($res[8][$j]) && $res[8][$j]['isstab']==0) class="orange" @endif>
                 @if (isset($res[$i][$j]))
-                {{$res[8][$j]['z']}}<br />
-                {{$res[8][$j]['short']}}<br />
-                <span class="small">{{$res[8][$j]['name']}}</span>
+                <a class="elempier" href="/elementsDetails/{{$res[8][$j]['z']}}">
+                    {{$res[8][$j]['z']}}<br />
+                    {{$res[8][$j]['short']}}<br />
+                    <span class="small">{{$res[8][$j]['name']}}</span>
+                </a>
                 @endif
                 </td>
                 @endfor
@@ -50,9 +52,11 @@
             @for ($j = 1; $j <= 14; $j++)
                 <td @if (isset($res[9][$j]) && $res[9][$j]['isstab']==0) class="orange" @endif>
                 @if (isset($res[$i][$j]))
-                {{$res[9][$j]['z']}}<br />
-                {{$res[9][$j]['short']}}<br />
-                <span class="small">{{$res[9][$j]['name']}}</span>
+                <a class="elempier" href="/elementsDetails/{{$res[9][$j]['z']}}">
+                    {{$res[9][$j]['z']}}<br />
+                    {{$res[9][$j]['short']}}<br />
+                    <span class="small">{{$res[9][$j]['name']}}</span>
+                </a>
                 @endif
                 </td>
                 @endfor

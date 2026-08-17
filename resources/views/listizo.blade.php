@@ -11,18 +11,19 @@
         <tr>
             <th>Z</th>
             <th>Name</th>
-            <th>Count Izo</th>
+            <th>Stable Izo</th>
             <th>Diff</th>
-
+            <th>Count abundance</th>
         </tr>
         @foreach ($res AS $elem)
         <tr>
             <td>{{$elem['z']}}</td>
             <td>{{$elements[$elem['z']]}}</td>
-            <td>{{$elem['count']}}</td>
+            <td>@if (isset($stable[$elem['z']])) {{$stable[$elem['z']]}} @else 0 @endif</td>
             <td>
                 {{$elem['max'] - $elem['min']}}
             </td>
+            <td>{{$elem['count']}}</td>
         </tr>
         @endforeach
     </table>
