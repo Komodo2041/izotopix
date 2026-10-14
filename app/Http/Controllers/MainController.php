@@ -29,7 +29,26 @@ class MainController extends Controller
         foreach ($elements as $izo) {
             $res[$izo->z][$izo->n] = 1;
         }
-
-        return view("serge", ["res" => $res]);
+        $elements = Izotopics::where("half_life_sec", ">=", 3.15576e+16)->get();
+        $res2 = [];
+        foreach ($elements as $izo) {
+            $res2[$izo->z][$izo->n] = 1;
+        }
+        $elements = Izotopics::where("half_life_sec", ">=", 3.15576e+13)->get();
+        $res3 = [];
+        foreach ($elements as $izo) {
+            $res3[$izo->z][$izo->n] = 1;
+        }
+        $elements = Izotopics::where("half_life_sec", ">=", 3.15576e+12)->get();
+        $res4 = [];
+        foreach ($elements as $izo) {
+            $res4[$izo->z][$izo->n] = 1;
+        }
+        $elements = Izotopics::where("half_life_sec", ">=", 3.15576e+11)->get();
+        $res5 = [];
+        foreach ($elements as $izo) {
+            $res5[$izo->z][$izo->n] = 1;
+        }
+        return view("serge", ["res" => $res, "res2" => $res2, "res3" => $res3, "res4" => $res4, "res5" => $res5]);
     }
 }

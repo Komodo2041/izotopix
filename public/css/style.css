@@ -52,6 +52,22 @@ a.elempier:hover {
     background: #1b1b1b;
 }
 
+#serge td.blue {
+    background: blue;
+}
+
+#serge td.orange {
+    background: orange;
+}
+
+#serge td.red {
+    background: red;
+}
+
+#serge td.oma {
+    background: #ff0000A0
+}
+
 .mt {
     margin: 20px;
 }
