@@ -10,3 +10,5 @@ Route::get('/showTableFile', "App\Http\Controllers\CsvController@showTableFile")
 Route::get('/importToTableIzoyopic', "App\Http\Controllers\CsvController@importToTableIzoyopic");
 Route::get('/elementsDetails/{id}', "App\Http\Controllers\ElementsController@elementsDetails");
 Route::get('/showallizotopics', "App\Http\Controllers\ElementsController@showallizotopics");
+
+Route::get('/serge', "App\Http\Controllers\MainController@serge");

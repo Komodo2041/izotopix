@@ -36,3 +36,22 @@ a.elempier:hover {
     color: #777777;
     text-decoration: none;
 }
+
+#serge {
+    margin-left: 20px;
+}
+
+#serge td {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #3b3b3b;
+    font-size: 8px;
+}
+
+#serge td.black {
+    background: #1b1b1b;
+}
+
+.mt {
+    margin: 20px;
+}

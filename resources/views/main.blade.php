@@ -4,6 +4,7 @@
 <h3>Izotopix</h3>
 
 <a href="/elements" class="btn btn-info">Pierwiastki Lista</a>
+<a href="/serge" class="btn btn-info">Wykres Serga</a>
 
 
 <div class="container">
