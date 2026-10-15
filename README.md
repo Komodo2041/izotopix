@@ -6,3 +6,6 @@ System będzie oparty o Laravel
 
 
  <img src="izotopix.png" width="600" alt="Izotopy pokaz">
+ Wykres Serga
+
+  <img src="serge.png" width="600" alt="Izotopy pokaz">

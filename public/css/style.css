@@ -44,8 +44,13 @@ a.elempier:hover {
 #serge td {
     height: 14px;
     width: 14px;
-    border: 1px solid #3b3b3b;
+    background: #ffffff;
+    border: 1px solid #8d8d8d;
     font-size: 8px;
+}
+
+#serge td.magic {
+    border: 2px solid #8d8d8d;
 }
 
 #serge td.black {

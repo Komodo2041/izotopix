@@ -10,7 +10,7 @@
 
 <table id="serge">
     <tr>
-        <td>N|Z</td>
+        <td>N\Z</td>
         @for ($j = 1; $j <= 120; $j++)
             <td>
             {{$j}}
@@ -21,11 +21,27 @@
         <tr>
         <td>{{$i}}</td>
         @for ($j = 1; $j <= 120; $j++)
-            <td @if (isset($res[$j][$i]) && $res[$j][$i]==1) class="black" @endif
-            @if (isset($res2[$j][$i]) && $res2[$j][$i]==1) class="blue" @endif
-            @if (isset($res3[$j][$i]) && $res3[$j][$i]==1) class="orange" @endif
-            @if (isset($res4[$j][$i]) && $res4[$j][$i]==1) class="red" @endif
-            @if (isset($res5[$j][$i]) && $res5[$j][$i]==1) class="oma" @endif>
+            @php
+            $classes=[];
+            if (isset($res[$j][$i]) && $res[$j][$i]==1) {
+            $classes[]="black" ;
+            } elseif (isset($res2[$j][$i]) && $res2[$j][$i]==1) {
+            $classes[]="blue" ;
+            } elseif (isset($res3[$j][$i]) && $res3[$j][$i]==1) {
+            $classes[]="orange" ;
+            } elseif (isset($res4[$j][$i]) && $res4[$j][$i]==1) {
+            $classes[]="red" ;
+            } elseif (isset($res5[$j][$i]) && $res5[$j][$i]==1) {
+            $classes[]="oma" ;
+            }
+
+            if (in_array($i, [8,20,28,50,82, 126]) || in_array($j, [8,20,28,50,82, 126])) {
+            $classes[]="magic" ;
+            }
+
+            $classes=implode(" ", $classes);
+            @endphp
+            <td class=" {{$classes}}"
             </td>
             @endfor
             </tr>
