@@ -4,7 +4,8 @@
 <h3>Izotopix</h3>
 <div class="mt">
     <a href="/elements" class="btn btn-info">Pierwiastki Lista</a>
-    <a href="/serge" class="btn btn-info">Wykres Serga</a><br />
+    <a href="/serge" class="btn btn-info">Wykres Serga</a>
+    <a href="/serge82" class="btn btn-info">Wykres Serga 82</a><br />
 </div>
 
 

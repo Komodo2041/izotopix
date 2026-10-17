@@ -73,6 +73,14 @@ a.elempier:hover {
     background: #ff0000A0
 }
 
+#serge td.oma2 {
+    background: #ffA0A0;
+}
+
+#serge td.oma3 {
+    background: #aad0d0;
+}
+
 .mt {
     margin: 20px;
 }

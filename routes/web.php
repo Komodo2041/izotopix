@@ -12,3 +12,4 @@ Route::get('/elementsDetails/{id}', "App\Http\Controllers\ElementsController@ele
 Route::get('/showallizotopics', "App\Http\Controllers\ElementsController@showallizotopics");
 
 Route::get('/serge', "App\Http\Controllers\MainController@serge");
+Route::get('/serge82', "App\Http\Controllers\MainController@serge82");
