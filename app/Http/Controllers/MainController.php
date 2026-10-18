@@ -75,7 +75,7 @@ class MainController extends Controller
         foreach ($elements as $izo) {
             $res4[$izo->z][$izo->n] = 1;
         }
-        $elements = Izotopics::where("half_life_sec", ">=", 3.15576e+2)->get();
+        $elements = Izotopics::where("half_life_sec", ">=", 300)->get();
         $res5 = [];
         foreach ($elements as $izo) {
             $res5[$izo->z][$izo->n] = 1;

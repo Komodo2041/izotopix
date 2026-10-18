@@ -9,6 +9,30 @@
 </div>
 
 
+<table id="legend">
+    <tr>
+        <td class="black">&nbsp;</td>
+        <td>Stabilne</td>
+    </tr>
+    <tr>
+        <td class="blue">&nbsp;</td>
+        <td>1 miliard lat</td>
+    </tr>
+    <tr>
+        <td class="orange">&nbsp;</td>
+        <td>1 milion</td>
+    </tr>
+    <tr>
+        <td class="red">&nbsp;</td>
+        <td>100 tysiecy lat</td>
+    </tr>
+    <tr>
+        <td class="oma">&nbsp;</td>
+        <td>10 tysięcy lat</td>
+    </tr>
+
+</table>
+
 <table id="serge">
     <tr>
         <td>N\Z</td>

@@ -9,6 +9,37 @@
 </div>
 
 
+<table id="legend">
+    <tr>
+        <td class="black">&nbsp;</td>
+        <td>Więcej niż 10 milionów lat</td>
+    </tr>
+    <tr>
+        <td class="blue">&nbsp;</td>
+        <td>10000 lat</td>
+    </tr>
+    <tr>
+        <td class="orange">&nbsp;</td>
+        <td>10 lat</td>
+    </tr>
+    <tr>
+        <td class="red">&nbsp;</td>
+        <td>1 rok</td>
+    </tr>
+    <tr>
+        <td class="oma">&nbsp;</td>
+        <td>300 sekund</td>
+    </tr>
+    <tr>
+        <td class="oma2">&nbsp;</td>
+        <td>30s</td>
+    </tr>
+    <tr>
+        <td class="oma3">&nbsp;</td>
+        <td>1s</td>
+    </tr>
+</table>
+
 <table id="serge">
     <tr>
         <td>N\Z</td>

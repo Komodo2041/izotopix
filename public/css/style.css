@@ -37,8 +37,10 @@ a.elempier:hover {
     text-decoration: none;
 }
 
-#serge {
+#serge,
+#legend {
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #serge td {
@@ -49,35 +51,47 @@ a.elempier:hover {
     font-size: 8px;
 }
 
+#legend td {
+    min-width: 30px;
+
+}
+
 #serge td.magic {
     border: 2px solid #8d8d8d;
 }
 
-#serge td.black {
+#serge td.black,
+#legend td.black {
     background: #1b1b1b;
 }
 
-#serge td.blue {
+#serge td.blue,
+#legend td.blue {
     background: blue;
 }
 
-#serge td.orange {
+#serge td.orange,
+#legend td.orange {
     background: orange;
 }
 
-#serge td.red {
+#serge td.red,
+#legend td.red {
     background: red;
 }
 
-#serge td.oma {
+#serge td.oma,
+#legend td.oma {
     background: #ff0000A0
 }
 
-#serge td.oma2 {
+#serge td.oma2,
+#legend td.oma2 {
     background: #ffA0A0;
 }
 
-#serge td.oma3 {
+#serge td.oma3,
+#legend td.oma3 {
     background: #aad0d0;
 }
 
