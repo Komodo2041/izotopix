@@ -90,6 +90,11 @@ class MainController extends Controller
         foreach ($elements as $izo) {
             $res7[$izo->z][$izo->n] = 1;
         }
-        return view("serge82", ["res" => $res, "res2" => $res2, "res3" => $res3, "res4" => $res4, "res5" => $res5, "res6" => $res6, "res7" => $res7]);
+        $elements = Izotopics::where("half_life_sec", ">=", 0.0001)->get();
+        $res8 = [];
+        foreach ($elements as $izo) {
+            $res8[$izo->z][$izo->n] = 1;
+        }
+        return view("serge82", ["res" => $res, "res2" => $res2, "res3" => $res3, "res4" => $res4, "res5" => $res5, "res6" => $res6, "res7" => $res7, "res8" => $res8]);
     }
 }

@@ -69,6 +69,8 @@
             $classes[]="oma2" ;
             }elseif (isset($res7[$j][$i]) && $res7[$j][$i]==1) {
             $classes[]="oma3" ;
+            }elseif (isset($res8[$j][$i]) && $res8[$j][$i]==1) {
+            $classes[]="oma4" ;
             }
 
             if (in_array($i, [8 + 126,20 + 126,28 + 126,50 + 126,82 + 126, 126 + 126]) || in_array($j, [8 + 82,20 + 82,28 + 82,50 + 82,82 + 82, 126 + 82])) {
